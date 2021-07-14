@@ -8,7 +8,6 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: ;
  }
  main{
     display: flex;
@@ -34,7 +33,7 @@
  .section-title{
      font-size: 64px;
      font-weight: 700;
-     padding: 0 40px;
+     padding: -1px 40px;
      color: #fff;
  }
  .click-button{
@@ -95,6 +94,42 @@
      color: #6C6C6C;
      padding: 0 12px;
  }
+ /* ---------------------------
+        youtube section style 
+ -----------------------------*/
+ .video-section{
+     width: 100%;
+     height: 750px;
+    background-color: #428bca;
+ }
+ .poetry-video{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+ }
+.poetry{
+    padding-left: 90px;
+}
+.youtube-section-title{
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center; 
+    padding: 30px 0; 
+}
+.poetry-title{
+    margin-top: 0px;
+    font-size: 32px;
+    color: #fff;
+    
+}
+.poetry p{
+    font-size: 20px;
+    color: #fff;
+}
+.video{
+    padding-right: 90px;
+    margin-top: 62px;
+}
 
  /*--------------------------
     footer section style
@@ -141,7 +176,6 @@
         width: 330px;
         height: 260px;
         margin: 50px 0px 50px 10px;
-
     }
 
     /*------------------
@@ -150,6 +184,30 @@
      .players{
         grid-template-columns: repeat(1, 1fr);
      }
+/* ---------------------------
+        youtube section style 
+ -----------------------------*/
+ .poetry-video{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+ }
+ .video-section{
+    width: 100%;
+    height: 1200px;
+ }
+ .youtube-section-title{
+     padding: 35px;
+ }
+ .poetry{
+     text-align: center;
+     padding: 0;
+ }
+ .video{
+    padding: 0;
+ }
+ .video iframe{
+     width: 100%;
+ }
 
        /*------------------
      footer style
@@ -185,6 +243,26 @@
      .players{
         grid-template-columns: repeat(2, 1fr);
      }
+     /* ---------------------------
+        youtube section style 
+      -----------------------------*/
+ .poetry-video{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+ }
+ .video-section{
+    width: 100%;
+    height: 1200px;
+ } 
+ .poetry{
+    text-align: center;
+    padding: 0;
+}
+.video{
+    padding: 0;
+ }
+ 
+
       /*------------------
      footer style
      ----------------- */
