@@ -33,7 +33,8 @@
  .section-title{
      font-size: 64px;
      font-weight: 700;
-     padding: -1px 40px;
+     padding: 0px 30px;
+     text-align: left;
      color: #fff;
  }
  .click-button{
@@ -94,19 +95,85 @@
      color: #6C6C6C;
      padding: 0 12px;
  }
+
+ /*--------------------
+    Photo Albume 
+  ----------------------*/
+  .best-player{
+      font-size: 42px;
+  }
+
+  .photo-frame {
+    width: 300px;
+    height: 270px;
+    border: 2px solid rosybrown;
+    border-radius: 10px;
+    position: relative;
+    margin: 15px;
+    overflow: hidden;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+.photo-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.photo img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.photo-detail {
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+
+}
+
+.photo-detail h3 {
+    background-color: rgba(0, 0, 0, 0.404);
+    color: whitesmoke;
+    text-align: center;
+}
+
+.photo-detail p {
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    padding: 10px;
+    background-color: #04080c44;
+}
+
+.photo-frame:hover .photo-detail {
+    display: block;
+    background-color: rgba(211, 211, 211, 0.007);
+}
+
+.photo-frame:hover .photo {
+    transform: scale(1.3);
+    transition: transform 2s ease-in;
+}
  /* ---------------------------
         youtube section style 
  -----------------------------*/
  .video-section{
      width: 100%;
-     height: 750px;
+     height: 600px;
     background-color: #428bca;
  }
- .poetry-video{
+ .highlight-video{
      display: grid;
      grid-template-columns: repeat(2, 1fr);
  }
-.poetry{
+.highlight{
     padding-left: 90px;
 }
 .youtube-section-title{
@@ -116,15 +183,17 @@
     text-align: center; 
     padding: 30px 0; 
 }
-.poetry-title{
+.highlight-title{
     margin-top: 0px;
     font-size: 32px;
     color: #fff;
     
 }
-.poetry p{
+.highlight p{
     font-size: 20px;
+    text-align: justify;
     color: #fff;
+    padding-right: 20px;
 }
 .video{
     padding-right: 90px;
@@ -152,9 +221,11 @@
   .footer-item p{
       font-size: 18px;
   }
+
   /* --------------------
     Media Queries
  -------------------- */
+
  @media only screen and (max-width:688px) {
     .header{
         width: 100%;
@@ -187,20 +258,23 @@
 /* ---------------------------
         youtube section style 
  -----------------------------*/
- .poetry-video{
+ .highlight-video{
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
  }
  .video-section{
     width: 100%;
-    height: 1200px;
+    height: 1000px;
  }
  .youtube-section-title{
      padding: 35px;
  }
- .poetry{
+ .highlight{
      text-align: center;
      padding: 0;
+ }
+ .highlight p{
+     padding-left: 20px;
  }
  .video{
     padding: 0;
@@ -219,6 +293,7 @@
      .footer-item{
          margin-bottom: 50px;
      }
+
 }
 
  /*--------------------
@@ -244,22 +319,28 @@
         grid-template-columns: repeat(2, 1fr);
      }
      /* ---------------------------
-        youtube section style 
+        youtube highlight section style 
       -----------------------------*/
- .poetry-video{
+ .highlight-video{
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
  }
  .video-section{
     width: 100%;
-    height: 1200px;
+    height: 900px;
  } 
- .poetry{
+ .highlight{
     text-align: center;
     padding: 0;
 }
+.highlight p{
+    padding-left: 20px;
+}
 .video{
     padding: 0;
+ }
+ .video iframe{
+     width: 100%;
  }
  
 
